@@ -1,0 +1,12 @@
+{
+  "name": "quantus",
+  "interface": {"displayName": "Quantus"},
+  "plugins": [
+    {
+      "name": "quantus",
+      "source": {"source": "local", "path": "./plugins/claude-code"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Finance"
+    }
+  ]
+}

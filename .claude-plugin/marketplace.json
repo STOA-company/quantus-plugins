@@ -1,0 +1,14 @@
+{
+  "name": "quantus",
+  "owner": {
+    "name": "Quantus"
+  },
+  "description": "Quantus plugins for Claude Code.",
+  "plugins": [
+    {
+      "name": "quantus",
+      "source": "./plugins/claude-code",
+      "description": "Claude in Quantus: MCP login once, longest-period backtests, data, order confirm cards."
+    }
+  ]
+}

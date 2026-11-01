@@ -1,0 +1,26 @@
+{
+  "name": "quantus",
+  "displayName": "Claude in Quantus",
+  "version": "0.2.0",
+  "description": "Quantus in your AI chat: log in once, then run backtests over the longest period, look at data, turn an order sentence into a confirm card.",
+  "author": {
+    "name": "Quantus",
+    "email": "info@quantus.kr",
+    "url": "https://www.quantus.kr"
+  },
+  "homepage": "https://www.quantus.kr",
+  "repository": "https://github.com/STOA-company/quantus-plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "quantus",
+    "backtest",
+    "korean-stocks",
+    "mcp",
+    "trading"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/STOA-company/quantus-plugins/blob/main/docs/INSTALL.md",
+  "supportUrl": "https://www.quantus.kr/ko/support",
+  "privacyPolicyUrl": "https://stoa-investment.notion.site/21861431004880568c23d62d5421b2c5",
+  "termsOfServiceUrl": "https://www.quantus.kr/ko/terms"
+}

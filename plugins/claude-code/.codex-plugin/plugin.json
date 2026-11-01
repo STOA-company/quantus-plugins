@@ -1,0 +1,45 @@
+{
+  "name": "quantus",
+  "version": "0.2.0",
+  "description": "Codex in Quantus: log in once, then run backtests over the longest period, look at data, turn an order sentence into a confirm card.",
+  "author": {
+    "name": "Quantus",
+    "email": "info@quantus.kr",
+    "url": "https://www.quantus.kr"
+  },
+  "homepage": "https://www.quantus.kr",
+  "repository": "https://github.com/STOA-company/quantus-plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "quantus",
+    "backtest",
+    "korean-stocks",
+    "mcp",
+    "trading"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./codex.mcp.json",
+  "interface": {
+    "displayName": "Codex in Quantus",
+    "shortDescription": "Backtests, data, order cards",
+    "longDescription": "Log in to Quantus once, then run backtests over the longest period the data covers, look at Korean and US stock data, turn an order sentence into a confirm card. Orders are never sent from chat: you press confirm on the Quantus screen. Quantus is not investment advice, and results may differ from real-account performance.",
+    "developerName": "Quantus Technologies",
+    "category": "Finance",
+    "capabilities": [
+      "Backtest",
+      "Read market data",
+      "Create order confirm cards"
+    ],
+    "websiteURL": "https://www.quantus.kr",
+    "supportURL": "https://www.quantus.kr/ko/support",
+    "privacyPolicyURL": "https://stoa-investment.notion.site/21861431004880568c23d62d5421b2c5",
+    "termsOfServiceURL": "https://www.quantus.kr/ko/terms",
+    "defaultPrompt": [
+      "Backtest Samsung Electronics over the longest period.",
+      "Show me the financial snapshot of NVDA.",
+      "Make a confirm card to buy 1 share of Samsung Electronics."
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

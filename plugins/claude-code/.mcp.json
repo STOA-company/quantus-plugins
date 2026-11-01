@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "quantus": {"type": "http", "url": "${QUANTUS_MCP_URL:-https://vibe-api.quantus.kr/mcp}"}
+  }
+}
