@@ -20,12 +20,12 @@ description: Run a Korean/US stock backtest through the Quantus MCP over the lon
 ## 실행
 - **종목을 지목한 문장**(«삼성전자…»): `backtest_run`. 전략 코드는 QSDK 로 짧게 쓴다(고객이 전략을 말하지 않았으면 «처음 사서 끝까지 보유»를 기본으로 하고 그렇게 했다고 말한다). `start`=위에서 얻은 시작일, `end`=오늘, `universe`={티커: 시장}. 신호 자산이 있으면 첫 호출은 확인 필요 응답이다 — 고지 내용을 고객에게 보여 주고, 같은 입력에 `confirm=true`·`accept_modeled_notice=true`·받은 `draft_id` 를 더해 다시 부른다.
 - **조건으로 종목을 고르는 문장**(«국내 반도체 PER 하위 10종목»): `run_selection_backtest` (문장에 종목명을 넣지 않는다, KR). 조건이 모호하면 먼저 `check_selection_rule`·`list_metrics` 로 지표 이름을 확인한다. 이 도구가 기간을 잘라 돌려주면 응답의 사유를 그대로 전한다.
-- 위 도구가 안 맞는 말이면 `quantus_ask` 에 고객 문장을 그대로 넘긴다(큐 크레딧·요금제가 본인 계정으로 적용된다).
+- 위 도구가 안 맞는 말이면, 이 연결에는 대화형 분석 도구가 없으니 퀀터스 큐에서 같은 문장으로 물어보라고 링크 하나를 준다: https://www.quantus.kr/ko/q
 - 더 보고 싶다는 말이면 `backtest_inspect` 로 결정(`decisions`)·거래 건수 위주로 보여 준다. 거래 가격·곡선의 가격 칸(`curve`·`trades` 의 가격)은 대화에 옮기지 않는다 — 수익률·MDD 같은 요약 지표로 말한다.
 
 ## 보고
 수익률·MDD 등 도구가 준 지표, 쓴 기간, 쓴 전략 가정을 먼저. 도구가 주지 않은 숫자는 만들지 않는다. 가격 원값 시계열은 대화에 옮기지 않는다(요약 지표만).
-다음 칸: 결과가 마음에 들면 «첫 매수 한 건을 확인 카드로 만들까요, 아니면 전략 자동 운용으로 할까요?» 하고 묻는다. 한 건이면 `quantus-order`, 자동 운용이면 `quantus-order` 의 «전략 자동 운용» 절을 따른다.
+다음 칸: 결과가 마음에 들면 «첫 매수 한 건을 확인 카드로 만들까요, 아니면 퀀터스 큐에서 자동 운용으로 이어 갈까요?» 하고 묻는다. 한 건이면 `quantus-order`, 자동 운용이면 `quantus-order` 의 «전략 자동 운용» 절(큐 링크)을 따른다.
 크레딧이 소진됐다는 응답(`credits_exhausted`)이면 안내된 `pricing_url`·`resets_at` 을 그대로 전한다.
 
 ## 하지 않는 것

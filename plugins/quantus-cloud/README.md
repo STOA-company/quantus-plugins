@@ -1,6 +1,6 @@
 # Quantus Cloud
 
-Quantus Cloud connects Claude Code, Claude and Codex to your Quantus account through one remote MCP server, `quantus-cloud` (`https://vibe-api.quantus.kr/mcp`). Sign in once in the browser (OAuth). No key is stored in any plugin file.
+Quantus Cloud connects Claude Code, Claude and Codex to your Quantus account through one remote MCP server, `quantus-cloud` (`https://vibe-api.quantus.kr/mcp/cloud`). Sign in once in the browser (OAuth). No key is stored in any plugin file.
 
 What you can ask in plain words:
 
