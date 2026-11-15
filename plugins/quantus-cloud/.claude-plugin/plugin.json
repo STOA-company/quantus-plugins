@@ -1,8 +1,8 @@
 {
-  "name": "quantus",
-  "displayName": "Claude in Quantus",
-  "version": "0.3.0",
-  "description": "Quantus in your AI chat: log in once, then run backtests over the longest period, look at data, turn an order sentence into a confirm card.",
+  "name": "quantus-cloud",
+  "displayName": "Quantus Cloud",
+  "version": "0.4.0",
+  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card; orders go out only after you press confirm on the Quantus screen. Cloud trading-bot tools appear once Quantus Cloud opens to customers.",
   "author": {
     "name": "Quantus",
     "email": "info@quantus.kr",
@@ -13,13 +13,14 @@
   "license": "MIT",
   "keywords": [
     "quantus",
+    "quantus-cloud",
     "backtest",
     "korean-stocks",
-    "mcp",
-    "trading"
+    "trading-bot",
+    "mcp"
   ],
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://github.com/STOA-company/quantus-plugins/blob/main/docs/INSTALL.md",
+  "documentationUrl": "https://github.com/STOA-company/quantus-plugins/blob/main/plugins/quantus-cloud/README.md",
   "supportUrl": "https://www.quantus.kr/ko/support",
   "privacyPolicyUrl": "https://stoa-investment.notion.site/21861431004880568c23d62d5421b2c5",
   "termsOfServiceUrl": "https://www.quantus.kr/ko/terms"

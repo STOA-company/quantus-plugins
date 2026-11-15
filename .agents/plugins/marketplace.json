@@ -5,22 +5,10 @@
   },
   "plugins": [
     {
-      "name": "quantus",
+      "name": "quantus-cloud",
       "source": {
         "source": "local",
-        "path": "./plugins/claude-code"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Finance"
-    },
-    {
-      "name": "quantus-research",
-      "source": {
-        "source": "local",
-        "path": "./plugins/quantus-research"
+        "path": "./plugins/quantus-cloud"
       },
       "policy": {
         "installation": "AVAILABLE",

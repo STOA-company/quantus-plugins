@@ -3,17 +3,12 @@
   "owner": {
     "name": "Quantus"
   },
-  "description": "Quantus plugins for Claude Code.",
+  "description": "Quantus Cloud for Claude Code.",
   "plugins": [
     {
-      "name": "quantus",
-      "source": "./plugins/claude-code",
-      "description": "Claude in Quantus: MCP login once, longest-period backtests, data, order confirm cards."
-    },
-    {
-      "name": "quantus-research",
-      "source": "./plugins/quantus-research",
-      "description": "Quantus Research: read-only backtests and market data for Korean and US stocks."
+      "name": "quantus-cloud",
+      "source": "./plugins/quantus-cloud",
+      "description": "Quantus Cloud: backtests and market data, and order confirm cards (orders go out only after you confirm on the Quantus screen). Cloud trading-bot tools appear once Quantus Cloud opens to customers."
     }
   ]
 }

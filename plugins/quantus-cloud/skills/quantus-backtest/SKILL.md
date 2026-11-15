@@ -5,7 +5,7 @@ description: Run a Korean/US stock backtest through the Quantus MCP over the lon
 
 # 퀀터스 백테스트 — 기간을 묻지 말고 가장 긴 기간부터
 
-도구는 퀀터스 MCP(`quantus` 서버)의 것이다. 도구 목록에 아래 이름이 없으면 «`/mcp` 에서 quantus 를 로그인해 주세요. 로그인했는데도 없으면 아직 이 서버에 열리지 않은 기능입니다» 한 줄만 말하고 멈춘다(없는 도구를 부르지 않는다).
+도구는 퀀터스 MCP(`quantus-cloud` 서버)의 것이다. 도구 목록에 아래 이름이 없으면 «`/mcp` 에서 quantus-cloud 를 로그인해 주세요. 로그인했는데도 없으면 아직 이 서버에 열리지 않은 기능입니다» 한 줄만 말하고 멈춘다(없는 도구를 부르지 않는다).
 말투는 쉬운 한국어, 고객이 영어면 영어.
 
 ## 기본 원칙
