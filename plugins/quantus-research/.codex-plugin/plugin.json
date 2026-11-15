@@ -22,7 +22,7 @@
   "mcpServers": "./codex.mcp.json",
   "interface": {
     "displayName": "Quantus Research",
-    "shortDescription": "Backtest stock ideas on real data",
+    "shortDescription": "Test stock ideas on real data",
     "longDescription": "Sign in to Quantus once, then ask in plain words: backtest a rule like \"10 Korean stocks with the lowest PER, rebalanced monthly\" over the longest period the data covers, see a company's metrics, or check prices and factors for Korean and US stocks. Read-only: it never places orders, moves money or changes accounts. Past backtest results do not guarantee future returns, and Quantus does not give investment advice.",
     "developerName": "Quantus Technologies",
     "category": "Finance",

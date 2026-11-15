@@ -17,7 +17,7 @@ description: Look at Quantus data inside the chat and pull it into the user's ow
 - 일봉 종가 같은 **가격 원값 시계열은 대화에 표로 깔지 않는다.** 원값이 필요하면 파이썬으로 받는 길(데이터 API `prices_daily`, 아래 «내 파이썬에서 받기»)로 안내하고, 대화에서는 요약·지표로 답한다. 가격이 필요한 분석 자체는 `quantus-backtest` 의 요약 지표로도 답한다.
 
 ## 내 파이썬에서 받기 (데이터 API 내려받기)
-내려받기로 안내하는 것은 **가격 일봉(`prices_daily`)·재무·팩터(PER·PBR·시총·모멘텀, `financials_factors`)·백테스트 결과(`backtest`)·DART 재무 금액(`financials_dart`)·공시·내부자(`alerts_signals`)·주문 연결(확인 카드 제안)** 이다. 키 범위(상품) 이름은 `prices_daily`(가격 일봉)·`financials_factors`(재무·팩터)·`backtest`·`financials_dart`(DART 재무 금액)·`alerts_signals`(공시·내부자 알림)·`order_link`(주문 연결, 기본 꺼짐)·`mcp_tools`(MCP 사용권)다. 도구·엔드포인트가 실제로 열려 있는 것만 안내한다 — 서버가 «준비 중»(501)이나 404 를 주는 상품은 사실대로 그렇게 말한다.
+내려받기로 안내하는 것은 **가격 일봉(`prices_daily`)·재무·팩터(PER·PBR·시총·모멘텀, `financials_factors`)·백테스트 결과(`backtest`)·DART 재무 금액(`financials_dart`)·공시·내부자(`alerts_signals`)** 이다. 키 범위(상품) 이름은 `prices_daily`(가격 일봉)·`financials_factors`(재무·팩터)·`backtest`·`financials_dart`(DART 재무 금액)·`alerts_signals`(공시·내부자 알림)·`mcp_tools`(MCP 사용권)다. 도구·엔드포인트가 실제로 열려 있는 것만 안내한다 — 서버가 «준비 중»(501)이나 404 를 주는 상품은 사실대로 그렇게 말한다.
 1. **키 발급**: 도구 목록에 `quantus_data_api_key_info` 가 있으면 그 도구가 알려 주는 안내를 따른다. 없으면 «키는 퀀터스 웹에 로그인한 뒤 발급받습니다(MCP 로그인만으로는 키가 안 나옵니다)» 까지만 말하고, 발급 화면 주소는 추측하지 않는다 — 모르면 퀀터스 고객센터(`https://www.quantus.kr/ko/support`)를 안내한다.
 2. **키를 대화에 붙여 넣게 하지 않는다.** 받은 키는 셸 환경 변수 `QUANTUS_API_KEY` 에 넣게 한다(`export QUANTUS_API_KEY=…` 를 고객이 직접, 셸 기록에 남기고 싶지 않으면 `.env` 파일). 키가 대화에 올라오면 «그 키는 지금 폐기하고 새로 발급하세요» 라고 말하고 값을 다시 쓰지 않는다.
 3. 파이썬 예시는 환경 변수에서만 읽는 꼴로 보여 준다: `os.environ["QUANTUS_API_KEY"]`. 호출 주소·응답 칸은 도구 설명과 서버가 알려 준 응답으로 확인한 것만 쓴다(추측 금지).

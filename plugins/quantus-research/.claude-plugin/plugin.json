@@ -20,7 +20,7 @@
     "mcp"
   ],
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://github.com/STOA-company/quantus-plugins/blob/main/docs/INSTALL.md",
+  "documentationUrl": "https://github.com/STOA-company/quantus-plugins/blob/main/plugins/quantus-research/README.md",
   "supportUrl": "https://www.quantus.kr/ko/support",
   "privacyPolicyUrl": "https://stoa-investment.notion.site/21861431004880568c23d62d5421b2c5",
   "termsOfServiceUrl": "https://www.quantus.kr/ko/terms"
