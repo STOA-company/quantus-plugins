@@ -4,6 +4,10 @@
 
 퀀터스 리서치는 Claude·Codex 안에서 투자 생각을 실제 국내·미국 데이터로 바로 검증합니다. 퀀터스에 한 번 로그인하고 «PER 낮은 국내 10종목 매달 바꾸면 가장 긴 기간 동안 어땠어?» 처럼 말하면, 수익률·최대 낙폭·실제로 쓴 기간을 보여 줍니다. 조회 전용이라 주문·이체·계좌 변경을 하지 않습니다. 과거 백테스트 결과는 미래 수익을 보장하지 않으며, 투자 권유가 아닌 정보 도구입니다.
 
+## See it work (76 s)
+
+[docs/demo/quantus-research-demo.mp4](docs/demo/quantus-research-demo.mp4) — Claude Code connected only to `quantus-research` (production): a Samsung Electronics backtest over the longest period, the 10 lowest-PER Korean stocks rebalanced monthly, and an order request that it declines because it has no order tools.
+
 ## Two plugins, one engine
 
 | Plugin | Server | What it does | Where |
