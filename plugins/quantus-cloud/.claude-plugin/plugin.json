@@ -2,7 +2,7 @@
   "name": "quantus-cloud",
   "displayName": "Quantus Cloud",
   "version": "0.4.0",
-  "description": "Test stock ideas on real Korean and US data, run your own trading bot on Quantus Cloud, and turn an order sentence into a confirm card. Orders go out only after you press confirm on the Quantus screen.",
+  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card; orders go out only after you press confirm on the Quantus screen. Cloud trading-bot tools appear once Quantus Cloud opens to customers.",
   "author": {
     "name": "Quantus",
     "email": "info@quantus.kr",
