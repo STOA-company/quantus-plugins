@@ -1,7 +1,7 @@
 {
-  "name": "quantus",
-  "version": "0.3.0",
-  "description": "Codex in Quantus: log in once, then run backtests over the longest period, look at data, turn an order sentence into a confirm card.",
+  "name": "quantus-cloud",
+  "version": "0.4.0",
+  "description": "Test stock ideas on real Korean and US data, run your own trading bot on Quantus Cloud, and turn an order sentence into a confirm card. Orders go out only after you press confirm on the Quantus screen.",
   "author": {
     "name": "Quantus",
     "email": "info@quantus.kr",
@@ -12,22 +12,24 @@
   "license": "MIT",
   "keywords": [
     "quantus",
+    "quantus-cloud",
     "backtest",
     "korean-stocks",
-    "mcp",
-    "trading"
+    "trading-bot",
+    "mcp"
   ],
   "skills": "./skills/",
   "mcpServers": "./codex.mcp.json",
   "interface": {
-    "displayName": "Codex in Quantus",
-    "shortDescription": "Backtests, data, order cards",
-    "longDescription": "Log in to Quantus once, then run backtests over the longest period the data covers, look at Korean and US stock data, turn an order sentence into a confirm card. Orders are never sent from chat: you press confirm on the Quantus screen. Quantus is not investment advice, and results may differ from real-account performance.",
+    "displayName": "Quantus Cloud",
+    "shortDescription": "Backtests, cloud bots, order cards",
+    "longDescription": "Sign in to Quantus once. Test a stock-picking idea over the longest period the data covers, look at Korean and US stock data, run your own trading bot on Quantus Cloud (upload, start, logs, status, stop), and turn an order sentence into a confirm card. Orders are never sent from chat: you press confirm on the Quantus screen in your own account. Cloud bot tools appear once Quantus Cloud is enabled for your account. Past backtest results do not guarantee future returns, and Quantus does not give investment advice.",
     "developerName": "Quantus Technologies",
     "category": "Finance",
     "capabilities": [
       "Backtest",
       "Read market data",
+      "Run cloud trading bots",
       "Create order confirm cards"
     ],
     "websiteURL": "https://www.quantus.kr",
