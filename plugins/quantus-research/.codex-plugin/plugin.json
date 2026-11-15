@@ -1,0 +1,45 @@
+{
+  "name": "quantus-research",
+  "description": "Check a stock-picking idea against real Korean and US market data: backtests over the longest available period, metrics, prices and factors. Read-only - it never places orders.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Quantus Technologies",
+    "email": "info@quantus.kr",
+    "url": "https://www.quantus.kr"
+  },
+  "homepage": "https://www.quantus.kr",
+  "repository": "https://github.com/STOA-company/quantus-plugins",
+  "license": "MIT",
+  "keywords": [
+    "quantus",
+    "backtest",
+    "korean-stocks",
+    "us-stocks",
+    "stock-data",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./codex.mcp.json",
+  "interface": {
+    "displayName": "Quantus Research",
+    "shortDescription": "Backtest stock ideas on real data",
+    "longDescription": "Sign in to Quantus once, then ask in plain words: backtest a rule like \"10 Korean stocks with the lowest PER, rebalanced monthly\" over the longest period the data covers, see a company's metrics, or check prices and factors for Korean and US stocks. Read-only: it never places orders, moves money or changes accounts. Past backtest results do not guarantee future returns, and Quantus does not give investment advice.",
+    "developerName": "Quantus Technologies",
+    "category": "Finance",
+    "capabilities": [
+      "Backtest",
+      "Read market data"
+    ],
+    "websiteURL": "https://www.quantus.kr",
+    "supportURL": "https://www.quantus.kr/ko/support",
+    "privacyPolicyURL": "https://stoa-investment.notion.site/21861431004880568c23d62d5421b2c5",
+    "termsOfServiceURL": "https://www.quantus.kr/ko/terms",
+    "defaultPrompt": [
+      "Backtest the 10 Korean stocks with the lowest PER, rebalanced monthly, over the longest period.",
+      "Show me Samsung Electronics' PER over the last year.",
+      "Which data fields can I use for a US stock backtest?"
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

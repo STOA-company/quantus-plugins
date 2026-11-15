@@ -1,11 +1,31 @@
 {
   "name": "quantus",
-  "interface": {"displayName": "Quantus"},
+  "interface": {
+    "displayName": "Quantus"
+  },
   "plugins": [
     {
       "name": "quantus",
-      "source": {"source": "local", "path": "./plugins/claude-code"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/claude-code"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance"
+    },
+    {
+      "name": "quantus-research",
+      "source": {
+        "source": "local",
+        "path": "./plugins/quantus-research"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Finance"
     }
   ]

@@ -9,6 +9,11 @@
       "name": "quantus",
       "source": "./plugins/claude-code",
       "description": "Claude in Quantus: MCP login once, longest-period backtests, data, order confirm cards."
+    },
+    {
+      "name": "quantus-research",
+      "source": "./plugins/quantus-research",
+      "description": "Quantus Research: read-only backtests and market data for Korean and US stocks."
     }
   ]
 }
