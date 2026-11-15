@@ -1,6 +1,6 @@
 {
   "name": "quantus",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Codex in Quantus: log in once, then run backtests over the longest period, look at data, turn an order sentence into a confirm card.",
   "author": {
     "name": "Quantus",
@@ -9,7 +9,7 @@
   },
   "homepage": "https://www.quantus.kr",
   "repository": "https://github.com/STOA-company/quantus-plugins",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "quantus",
     "backtest",

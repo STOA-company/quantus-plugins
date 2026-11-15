@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "quantus-research": {
+      "type": "http",
+      "url": "https://vibe-api.quantus.kr/mcp/research"
+    }
+  }
+}
