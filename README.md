@@ -8,7 +8,7 @@
 
 | Plugin | Server | Tools |
 |---|---|---|
-| `quantus-cloud` | `https://vibe-api.quantus.kr/mcp` | Backtests, metrics, prices, factors, data coverage · cloud trading bots (upload, start, logs, status, stop — appear once Quantus Cloud opens to customers) · order confirm cards (you confirm on the Quantus screen) |
+| `quantus-cloud` | `https://vibe-api.quantus.kr/mcp/cloud` | Backtests, metrics, prices, factors, data coverage · cloud trading bots (upload, start, logs, status, stop — appear once Quantus Cloud opens to customers) · order confirm cards (you confirm on the Quantus screen) |
 
 ## Install
 
@@ -26,7 +26,7 @@ codex plugin add quantus-cloud@quantus
 codex mcp login quantus-cloud
 ```
 
-claude.ai / Claude Desktop (tools only, no skills): Settings › Connectors › Add custom connector › `https://vibe-api.quantus.kr/mcp`.
+claude.ai / Claude Desktop (tools only, no skills): Settings › Connectors › Add custom connector › `https://vibe-api.quantus.kr/mcp/cloud`.
 
 Installed the older `quantus` or `quantus-research` plugin, or added `https://vibe-api.quantus.kr/mcp/research` as a custom connector? Remove it first, then install `quantus-cloud` (otherwise you sign in twice).
 

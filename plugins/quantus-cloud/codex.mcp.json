@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "quantus-cloud": {"type": "http", "url": "https://vibe-api.quantus.kr/mcp"}
+    "quantus-cloud": {"type": "http", "url": "https://vibe-api.quantus.kr/mcp/cloud"}
   }
 }
