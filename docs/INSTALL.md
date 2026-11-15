@@ -24,7 +24,7 @@
     codex plugin marketplace add STOA-company/quantus-plugins
     codex plugin add quantus-cloud@quantus
 
-(codex-cli 0.160.0 격리 CODEX_HOME 실측 11-15 15:47: 설치 뒤 `codex mcp list` 에 quantus-cloud 1개 «Not logged in», `codex plugin remove quantus-cloud@quantus` 로 지우면 0개.) 새 세션을 열고 `codex mcp login quantus-cloud` 로 로그인한다. Codex 쪽 주소는 운영 고정이다 — 환경 변수로 덮이지 않는다.
+설치 뒤 `codex mcp list` 에 quantus-cloud 가 «Not logged in» 으로 보이면 정상이다. 새 세션을 열고 `codex mcp login quantus-cloud` 로 로그인한다. Codex 쪽 주소는 운영 고정이다 — 환경 변수로 덮이지 않는다.
 
 플러그인 없이 `~/.codex/config.toml` 만으로 쓰려면:
 

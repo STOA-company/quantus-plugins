@@ -1,12 +1,12 @@
 ---
 name: quantus-order
-description: Turn a single buy/sell sentence into a Quantus confirmation-card link ("내 계좌로 삼성전자 1주 사 줘"), and hand a strategy-running request to the server's strategy tools. Nothing starts until the user confirms on the Quantus screen.
+description: Turn a single buy/sell sentence into a Quantus confirmation-card link ("내 계좌로 삼성전자 1주 사 줘"), and point a strategy-running request to Quantus Q (https://www.quantus.kr/en/q), since this connection has no strategy-running tools. Nothing is ordered until the user confirms on the Quantus screen.
 ---
 
 # 퀀터스 주문 — 확인 카드 링크까지만
 
 이 스킬에는 주문을 직접 보내는 길이 없다. 주문은 고객이 **퀀터스 화면에서 직접 «확인»을 눌러야** 나간다.
-도구는 퀀터스 MCP(`quantus-cloud` 서버)의 `quantus_propose_order`. 도구 목록에 없으면 «`/mcp` 화면에서 quantus-cloud 를 로그인해 주세요(이 도구는 로그인한 본인에게만 열립니다). 로그인했는데도 없으면 아직 이 서버에 열리지 않은 기능입니다» 한 줄 하고 멈춘다.
+도구는 퀀터스 MCP(`quantus-cloud` 서버)의 `quantus_propose_order`. 도구 목록에 없으면 «`/mcp` 화면에서 quantus-cloud 를 로그인해 주세요(이 도구는 로그인한 본인에게만 열립니다). 로그인했는데도 없으면 퀀터스에서 직접 주문하실 수 있습니다: https://www.quantus.kr/ko/q» 한 줄 하고 멈춘다.
 
 ## 순서
 1. 고객이 말한 것만 담아 `quantus_propose_order` 를 부른다: `instrument`(말한 이름·티커), `side`(buy/sell), 수량(`quantity`+`unit`) 또는 금액(`amount_krw`/`amount_usd`) 중 **말한 것 하나**, `order_type`·`limit_price`·`when`·`broker`·익절/손절은 말했을 때만, `original_sentence`=고객 문장 그대로.
