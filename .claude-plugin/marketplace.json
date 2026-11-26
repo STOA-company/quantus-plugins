@@ -8,7 +8,7 @@
     {
       "name": "quantus-cloud",
       "source": "./plugins/quantus-cloud",
-      "description": "Quantus Cloud: backtests and market data, and order confirm cards (orders go out only after you confirm on the Quantus screen). Cloud trading-bot tools appear once Quantus Cloud opens to customers."
+      "description": "Quantus Cloud: backtests and market data, and order confirm cards (orders go out only after you confirm on the Quantus screen). Cloud instance tools (rent an instance to upload and run your own code) appear once Quantus Cloud opens to customers."
     }
   ]
 }
