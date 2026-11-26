@@ -1,17 +1,17 @@
 ---
 name: quantus-order
-description: Turn a single buy/sell sentence into a Quantus confirmation-card link ("내 계좌로 삼성전자 1주 사 줘"), and point a strategy-running request to Quantus Q (https://www.quantus.kr/en/q), since this connection has no strategy-running tools. Nothing is ordered until the user confirms on the Quantus screen.
+description: Turn a single buy/sell sentence into a Quantus confirmation-card link ("내 계좌로 삼성전자 1주 사 줘"), and point a strategy-running request to Quantus Q (https://www.quantus.kr/en/q), since this connection has no strategy-running tools. Orders go out only after you press confirm on the Quantus screen; they are then placed in your own brokerage account (Korea Investment & Securities or DB Securities) through the official brokerage API you connected in Quantus.
 ---
 
 # 퀀터스 주문 — 확인 카드 링크까지만
 
-이 스킬에는 주문을 직접 보내는 길이 없다. 주문은 고객이 **퀀터스 화면에서 직접 «확인»을 눌러야** 나간다.
+이 스킬에는 주문을 직접 보내는 길이 없다. 주문은 **퀀터스 화면에서 확인을 눌러야만 나갑니다.** 그때 고객이 퀀터스에 연결한 증권사(한국투자증권·DB증권)의 공식 API를 통해 본인 계좌에서 주문이 나갑니다.
 도구는 퀀터스 MCP(`quantus-cloud` 서버)의 `quantus_propose_order`. 도구 목록에 없으면 «`/mcp` 화면에서 quantus-cloud 를 로그인해 주세요(이 도구는 로그인한 본인에게만 열립니다). 로그인했는데도 없으면 퀀터스에서 직접 주문하실 수 있습니다: https://www.quantus.kr/ko/q» 한 줄 하고 멈춘다.
 
 ## 순서
 1. 고객이 말한 것만 담아 `quantus_propose_order` 를 부른다: `instrument`(말한 이름·티커), `side`(buy/sell), 수량(`quantity`+`unit`) 또는 금액(`amount_krw`/`amount_usd`) 중 **말한 것 하나**, `order_type`·`limit_price`·`when`·`broker`·익절/손절은 말했을 때만, `original_sentence`=고객 문장 그대로.
 2. 수량·금액·증권사·시각을 임의로 채우지 않는다. 빠져서 주문을 만들 수 없으면 필요한 한 가지만 묻는다.
-3. 응답의 `confirm_url`·`summary`·`notes` 를 그대로 보여 준다. 그리고 반드시 이 뜻을 말한다: «아직 주문은 나가지 않았습니다. 이 링크를 열어 퀀터스 화면에서 직접 확인을 눌러야 나갑니다. 링크는 본인 로그인으로만 열립니다.» 응답에 만료 시각(`expires_at`)이 있을 때만 «약 30분 안에» 라고 덧붙인다.
+3. 응답의 `confirm_url`·`summary`·`notes` 를 그대로 보여 준다. 그리고 반드시 이 뜻을 말한다: «아직 주문은 나가지 않았습니다. 이 링크를 열어 퀀터스 화면에서 확인을 눌러야만 나갑니다. 그때 고객이 퀀터스에 연결한 증권사(한국투자증권·DB증권)의 공식 API를 통해 본인 계좌에서 주문이 나갑니다. 링크는 본인 로그인으로만 열립니다.» 응답에 만료 시각(`expires_at`)이 있을 때만 «약 30분 안에» 라고 덧붙인다.
 4. `link_mode` 가 `prefill` 이면 «링크를 열면 문장만 채워지고, 퀀터스 화면에서 한 번 더 보내야 합니다» 라고 사실대로 말한다.
 5. 체결·접수 여부는 말하지 않는다 — 이 도구는 모른다. «체결됐나요?» 에는 퀀터스 화면(주문 내역)에서 확인하라고 안내한다.
 

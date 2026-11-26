@@ -1,8 +1,8 @@
 {
   "name": "quantus-cloud",
   "displayName": "Quantus Cloud",
-  "version": "0.4.1",
-  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card; orders go out only after you press confirm on the Quantus screen. Cloud instance tools (rent an instance to upload and run your own code) appear once Quantus Cloud opens to customers.",
+  "version": "0.4.2",
+  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card. Orders go out only after you press confirm on the Quantus screen; they are then placed in your own brokerage account (Korea Investment & Securities or DB Securities) through the official brokerage API you connected in Quantus. Cloud instance tools (rent an instance to upload and run your own code) appear once Quantus Cloud opens to customers.",
   "author": {
     "name": "Quantus",
     "email": "info@quantus.kr",

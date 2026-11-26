@@ -5,7 +5,7 @@ Recorded on 2026-11-15 against the production Quantus server, with a company tes
 - **Claude version** — [`quantus-cloud-claude-demo.mp4`](quantus-cloud-claude-demo.mp4) (92 s). Connects to `https://vibe-api.quantus.kr/mcp/cloud`. It asks three things:
   1. Backtest Samsung Electronics over the longest period. The answer gives the dates the engine actually used and why.
   2. Test monthly holding of the 10 lowest-PER Korean stocks.
-  3. "Buy 1 share of Samsung Electronics for me." The reply is a link that pre-fills the order in Quantus. Nothing is ordered from the chat: the order goes out only after the account owner sends it and confirms in Quantus.
+  3. "Buy 1 share of Samsung Electronics for me." The reply is a link that pre-fills the order in Quantus. Nothing is ordered from the chat: orders go out only after you press confirm on the Quantus screen; they are then placed in your own brokerage account (Korea Investment & Securities or DB Securities) through the official brokerage API you connected in Quantus.
 - **Research edition (the ChatGPT / Codex package)** — [`quantus-cloud-chatgpt-demo.mp4`](quantus-cloud-chatgpt-demo.mp4) (74 s). This video uses the same skills as the ChatGPT / Codex package and the research server `https://vibe-api.quantus.kr/mcp/research` (no order-placement, funds-transfer, or cloud instance tools; 14 read-only tools and 3 non-destructive compute/summary tools [`run_selection_backtest`, `morning_brief`, `backtest_run`] marked `readOnlyHint: false`), shown in Claude Code. It asks the same three things. This version does not place orders. Asked to buy, it gives the Quantus link (https://www.quantus.kr/en/q), where the user confirms and orders in their own account.
 
 About question 2:

@@ -5,7 +5,7 @@
 
 ## 한국어
 
-플러그인 이름은 `quantus-cloud` 하나다. 서버 `https://vibe-api.quantus.kr/mcp/cloud`: 조회·백테스트 · 퀀터스 클라우드 인스턴스 대여(내 코드 올리기·시작·로그·상태·멈추기 — 퀀터스 클라우드가 고객에게 열리면 보임) · 주문 확인 카드(퀀터스 화면에서 본인이 «확인» 을 눌러야 주문이 나감).
+플러그인 이름은 `quantus-cloud` 하나다. 서버 `https://vibe-api.quantus.kr/mcp/cloud`: 조회·백테스트 · 퀀터스 클라우드 인스턴스 대여(내 코드 올리기·시작·로그·상태·멈추기 — 퀀터스 클라우드가 고객에게 열리면 보임) · 주문 확인 카드(주문은 퀀터스 화면에서 확인을 눌러야만 나가며, 그때 고객이 퀀터스에 연결한 증권사[한국투자증권·DB증권]의 공식 API를 통해 본인 계좌에서 주문이 나감).
 
 ### Claude Code
     /plugin marketplace add STOA-company/quantus-plugins
@@ -14,7 +14,7 @@
 그다음 `/mcp` → quantus-cloud → 인증(브라우저에서 퀀터스 로그인 한 번). 이제 이렇게 말해 보세요.
 - «삼성전자 가장 긴 기간으로 백테스트»
 - «국내 반도체 PER 하위 10종목 백테스트, 가능한 가장 긴 기간으로»
-- «내 계좌로 삼성전자 1주 사 줘» → 확인 카드 링크가 나옵니다. 퀀터스 화면에서 직접 확인을 눌러야 주문이 나갑니다.
+- «내 계좌로 삼성전자 1주 사 줘» → 확인 카드 링크가 나옵니다. 주문은 퀀터스 화면에서 확인을 눌러야만 나갑니다. 그때 고객이 퀀터스에 연결한 증권사(한국투자증권·DB증권)의 공식 API를 통해 본인 계좌에서 주문이 나갑니다.
 - «내 노트북 파이썬에서 퀀터스 데이터 받는 법»
 
 다른 주소로 붙이려면 Claude Code 를 시작하기 전에 `export QUANTUS_MCP_URL=<MCP 주소>` (기본은 `https://vibe-api.quantus.kr/mcp/cloud`).
@@ -47,4 +47,4 @@ Claude Code: `/plugin marketplace add STOA-company/quantus-plugins` then `/plugi
 
 Codex: `codex plugin marketplace add STOA-company/quantus-plugins`, `codex plugin add quantus-cloud@quantus`, then `codex mcp login quantus-cloud`. Without the plugin, put `[mcp_servers.quantus-cloud]` `url = "https://vibe-api.quantus.kr/mcp/cloud"` in `~/.codex/config.toml`.
 
-claude.ai / Claude Desktop: Settings > Connectors > Add custom connector > `https://vibe-api.quantus.kr/mcp/cloud` (tools only, no skills). Orders are only ever a confirm-card link; you press confirm on the Quantus screen. API keys: issue them on the Quantus web after login and pass them via `QUANTUS_API_KEY`, never in chat.
+claude.ai / Claude Desktop: Settings > Connectors > Add custom connector > `https://vibe-api.quantus.kr/mcp/cloud` (tools only, no skills). Orders are only ever a confirm-card link. Orders go out only after you press confirm on the Quantus screen; they are then placed in your own brokerage account (Korea Investment & Securities or DB Securities) through the official brokerage API you connected in Quantus. API keys: issue them on the Quantus web after login and pass them via `QUANTUS_API_KEY`, never in chat.
