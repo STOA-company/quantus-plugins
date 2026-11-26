@@ -11,4 +11,11 @@ What you can ask in plain words:
 
 Install on Claude Code: `/plugin marketplace add STOA-company/quantus-plugins`, then `/plugin install quantus-cloud@quantus`, then `/mcp` and sign in. On Codex: `codex plugin marketplace add STOA-company/quantus-plugins`, `codex plugin add quantus-cloud@quantus`, `codex mcp login quantus-cloud`. Full steps: [docs/INSTALL.md](../../docs/INSTALL.md).
 
+## Additional first-party endpoints referenced by skills
+
+In chat, all tool calls go only to the declared remote MCP server `quantus-cloud` (`https://vibe-api.quantus.kr/mcp/cloud`) via OAuth. This plugin contains no local scripts, hooks, or executable code.
+
+- **Quantus Data API (`https://vibe-api.quantus.kr/v1/...`)** — When a user asks to download raw daily prices or datasets into their own local Python environment, the `quantus-data` skill provides example Python snippets for the first-party Quantus Data API using a Quantus API key configured locally by the user (never pasted into chat, stored in plugin files, or sent to `/mcp/cloud`).
+- **Quantus web pages (`https://www.quantus.kr/ko/q`, `https://www.quantus.kr/en/q`, `https://www.quantus.kr/ko/support`)** — Skills link users to Quantus Q for interactive analysis or automated strategies and to Quantus Support when needed.
+
 Past backtest results do not guarantee future returns, and Quantus does not give investment advice. Support: https://www.quantus.kr/ko/support · Terms: https://www.quantus.kr/ko/terms · Privacy: https://stoa-investment.notion.site/21861431004880568c23d62d5421b2c5
