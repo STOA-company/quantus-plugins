@@ -1,7 +1,7 @@
 {
   "name": "quantus-cloud",
-  "version": "0.4.0",
-  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card; orders go out only after you press confirm on the Quantus screen. Cloud trading-bot tools appear once Quantus Cloud opens to customers.",
+  "version": "0.4.1",
+  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card; orders go out only after you press confirm on the Quantus screen. Cloud instance tools (rent an instance to upload and run your own code) appear once Quantus Cloud opens to customers.",
   "author": {
     "name": "Quantus",
     "email": "info@quantus.kr",
@@ -15,7 +15,7 @@
     "quantus-cloud",
     "backtest",
     "korean-stocks",
-    "trading-bot",
+    "cloud-instance",
     "mcp"
   ],
   "skills": "./skills/",
@@ -23,14 +23,14 @@
   "interface": {
     "displayName": "Quantus Cloud",
     "shortDescription": "Backtests, data, order cards",
-    "longDescription": "Sign in to Quantus once. Test a stock-picking idea over the longest period the data covers, look at Korean and US stock data, and turn an order sentence into a confirm card. Orders are never sent from chat: you press confirm on the Quantus screen in your own account. Cloud trading-bot tools (upload, start, logs, status, stop) appear once Quantus Cloud opens to customers. Past backtest results do not guarantee future returns, and Quantus does not give investment advice.",
+    "longDescription": "Sign in to Quantus once. Test a stock-picking idea over the longest period the data covers, look at Korean and US stock data, and turn an order sentence into a confirm card. Orders are never sent from chat: you press confirm on the Quantus screen in your own account. Cloud instance tools (rent an instance, upload your code, start, read logs and status, stop) appear once Quantus Cloud opens to customers. Past backtest results do not guarantee future returns, and Quantus does not give investment advice.",
     "developerName": "Quantus Technologies",
     "category": "Finance",
     "capabilities": [
       "Backtest",
       "Read market data",
       "Create order confirm cards",
-      "Run cloud trading bots (once Quantus Cloud opens)"
+      "Rent Quantus Cloud instances for your own code (once Quantus Cloud opens)"
     ],
     "websiteURL": "https://www.quantus.kr",
     "supportURL": "https://www.quantus.kr/ko/support",

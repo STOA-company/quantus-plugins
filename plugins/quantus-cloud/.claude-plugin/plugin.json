@@ -1,8 +1,8 @@
 {
   "name": "quantus-cloud",
   "displayName": "Quantus Cloud",
-  "version": "0.4.0",
-  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card; orders go out only after you press confirm on the Quantus screen. Cloud trading-bot tools appear once Quantus Cloud opens to customers.",
+  "version": "0.4.1",
+  "description": "Test stock ideas on real Korean and US data and turn an order sentence into a confirm card; orders go out only after you press confirm on the Quantus screen. Cloud instance tools (rent an instance to upload and run your own code) appear once Quantus Cloud opens to customers.",
   "author": {
     "name": "Quantus",
     "email": "info@quantus.kr",
@@ -16,7 +16,7 @@
     "quantus-cloud",
     "backtest",
     "korean-stocks",
-    "trading-bot",
+    "cloud-instance",
     "mcp"
   ],
   "icon": "./assets/icon.png",

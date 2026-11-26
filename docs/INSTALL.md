@@ -5,7 +5,7 @@
 
 ## 한국어
 
-플러그인 이름은 `quantus-cloud` 하나다. 서버 `https://vibe-api.quantus.kr/mcp/cloud`: 조회·백테스트 · 퀀터스 클라우드 봇(묶음 올리기·시작·로그·상태·멈추기 — 퀀터스 클라우드가 고객에게 열리면 보임) · 주문 확인 카드(퀀터스 화면에서 본인이 «확인» 을 눌러야 주문이 나감).
+플러그인 이름은 `quantus-cloud` 하나다. 서버 `https://vibe-api.quantus.kr/mcp/cloud`: 조회·백테스트 · 퀀터스 클라우드 인스턴스 대여(내 코드 올리기·시작·로그·상태·멈추기 — 퀀터스 클라우드가 고객에게 열리면 보임) · 주문 확인 카드(퀀터스 화면에서 본인이 «확인» 을 눌러야 주문이 나감).
 
 ### Claude Code
     /plugin marketplace add STOA-company/quantus-plugins
